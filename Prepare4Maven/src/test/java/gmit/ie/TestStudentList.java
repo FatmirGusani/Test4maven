@@ -35,4 +35,11 @@ public class TestStudentList {
         myList.addStudent(myStudent);
         assertEquals(myStudent, myList.findByName("Fatmir"));
     }
+
+    @Test
+    void testNotFindByNameStudent()
+    {
+        myList.addStudent(myStudent);
+        assertEquals(myStudent, myList.findByName(null));
+    }
 }
